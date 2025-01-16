@@ -31,7 +31,7 @@ export default async function SignIn(){
                     <h2 className=""> Entrar nossa painel ?</h2>
                     <form action={ async () => { "use server"; await signIn("google") } }>
                         <button className="bg-blue-700 px-10 p-2 rounded-md animate-pulse flex gap-3 items-center">
-                            <Image width={30} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/768px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="" />
+                            <Image width={30} height={30} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/768px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="" />
                             Sign in
                         </button>
                     </form>

@@ -1,5 +1,6 @@
 
 import { auth, signIn, signOut } from "@/auth";
+import Image from "next/image";
 
 export default async function SignIn(){
     const session = await auth();
@@ -12,7 +13,7 @@ export default async function SignIn(){
             <div className="bg-black h-screen text-white p-10 flex gap-9 flex-col ">
                  <div className="bg-zinc-900 rounded-md w-96 h-96 flex gap-5 flex-col 
                     items-center justify-center">
-                    <img className="rounded-full absolute top-44" width={150} src={`${user.image}`} alt="" />
+                    <Image className="rounded-full absolute top-44" width={150} src={`${user.image}`} alt="" />
                     <h1 className="text-3xl text-center"> Bem vindo : {user.name} </h1>
                     <p className="mb-10">E-mail: {user.email}</p>
                     <form action={ async () => { "use server"; await signOut() } }>
@@ -30,7 +31,7 @@ export default async function SignIn(){
                     <h2 className=""> Entrar nossa painel ?</h2>
                     <form action={ async () => { "use server"; await signIn("google") } }>
                         <button className="bg-blue-700 px-10 p-2 rounded-md animate-pulse flex gap-3 items-center">
-                            <img width={30} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/768px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="" />
+                            <Image width={30} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/768px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="" />
                             Sign in
                         </button>
                     </form>

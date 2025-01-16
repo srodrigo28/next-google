@@ -42,6 +42,7 @@ export default eslintConfig
 ````
 
 #### URI
+http://localhost:3000/api/auth/callback/google
 https://next-google-4qzp-phi.vercel.app/api/auth/callback/google
 
 

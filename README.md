@@ -41,6 +41,9 @@ const eslintConfig = [
 export default eslintConfig
 ````
 
+#### URI
+https://next-google-4qzp-phi.vercel.app/api/auth/callback/google
+
 
 #### Ref.
 ```
